@@ -1,8 +1,6 @@
-cluster.name: development
-node.name: winner
-bootstrap.memory_lock: false
-network.host: 0.0.0.0
-discovery.zen.minimum_master_nodes: 1
+server.name: kibana
+server.host: "0"
+elasticsearch.url: http://elasticsearch:9200
 
 ## Disable X-Pack
 ## see https://www.elastic.co/guide/en/x-pack/current/xpack-settings.html
@@ -11,4 +9,6 @@ discovery.zen.minimum_master_nodes: 1
 xpack.security.enabled: false
 xpack.monitoring.enabled: false
 xpack.ml.enabled: false
-xpack.watcher.enabled: false
+xpack.graph.enabled: false
+xpack.reporting.enabled: false
+xpack.grokdebugger.enabled: false
